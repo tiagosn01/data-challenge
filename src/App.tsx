@@ -9,8 +9,8 @@ import dataProvider from './services/api';
 
 const App = () => (
     <Admin dataProvider={dataProvider}  >
-        <Resource name="categories" list={CategoriesList} edit={EditGuesser} icon={FiList} />
-        <Resource name="parts" list={PartsList} edit={EditGuesser}  icon={FiPackage}  />
+        <Resource options={{label: 'Categoias'}} name="categories" list={CategoriesList} edit={EditGuesser} icon={FiList} />
+        <Resource options={{label: 'Peças'}} name="parts" list={PartsList} edit={EditGuesser}  icon={FiPackage}  />
     </Admin>
 );
 

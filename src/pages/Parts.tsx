@@ -1,7 +1,7 @@
 import { List, Datagrid, TextField, NumberField, EditButton, BooleanField } from 'react-admin';
 
 export const PartsList = () => (
-    <List>
+    <List title="Peças">
         <Datagrid rowClick="edit" >
             <TextField source="id" />
             <TextField source="name" />
